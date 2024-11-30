@@ -1,37 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odisha Metro</title>
+    <title>Bhubaneswar Metro | Odisha Metro (BMRCL)</title>
+    <meta name="description"
+        content="Welcome to the Bhubaneswar Metro (Odisha Metro). Learn about the world-class rapid transit system in Bhubaneswar and Cuttack, project updates, and route maps.">
+    <meta name="keywords"
+        content="Bhubaneswar Metro, Odisha Metro, BMRCL, Bhubaneswar Rail, Odisha Rapid Transit, Bhubaneswar Metro Project">
+    <meta name="author" content="Bhubaneswar Metro Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Bhubaneswar Metro | Odisha Metro (BMRCL)">
+    <meta property="og:description"
+        content="Explore the Bhubaneswar Metro - a modern transit system connecting Bhubaneswar and Cuttack. Get project updates, route maps, and more.">
+    <meta property="og:url" content="https://www.bhubaneswarmetro.in">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.bhubaneswarmetro.in/metro-thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bhubaneswar Metro | Odisha Metro (BMRCL)">
+    <meta name="twitter:description"
+        content="Learn about Bhubaneswar Metro and its route network, project phases, and updates.">
+    <meta name="twitter:image" content="https://www.bhubaneswarmetro.in/metro-thumbnail.jpg">
+    <link rel="canonical" href="https://www.bhubaneswarmetro.in">
     <style>
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #ff7e5f, #feb47b);
-            font-family: Arial, sans-serif;
-            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
             text-align: center;
         }
-        h1 {
-            margin: 0;
-            font-size: 3em;
+
+        .container {
+            color: white;
+            animation: fadeIn 1.5s ease-out, pulse 4s infinite alternate;
         }
-        p {
+
+        h1 {
+            font-size: 3rem;
             margin: 0;
-            font-size: 0.8em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            animation: moveInFromTop 2s ease-out;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
+            color: #ffe4b5;
+            animation: fadeIn 2s 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 10px;
             font-style: italic;
+            animation: fadeIn 2s 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveInFromTop {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.05);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div>
+    <div class="container">
         <h1>Welcome to Odisha Metro</h1>
-        <p>unofficial</p>
+        <h2>Bhubaneswar Metro (BMRCL)</h2>
+        <p>Unofficial website providing updates on Odisha's modern rapid transit system.</p>
     </div>
 </body>
+
 </html>
